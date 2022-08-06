@@ -1,8 +1,6 @@
 {
   "name": "@getnpm/gulp-mix",
-  "engines": {
-    "node": ">= 0.10"
-  },
+  "version": "0.0.0",
   "main": "index.js",
   "repository": {
     "type": "git",
@@ -13,5 +11,8 @@
     "gulp-if": "^3.0.0",
     "gulp-rename": "^2.0.0",
     "gulp-sourcemaps": "^3.0.0"
+  },
+  "engines": {
+    "node": ">= 0.10"
   }
 }
