@@ -1,5 +1,7 @@
+import init from 'gulp'
+
 const gulp = {
-    init: require('gulp')
+    init: init
 };
 
 class Mix {
