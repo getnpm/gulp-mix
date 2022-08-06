@@ -1,5 +1,5 @@
-import init from 'gulp'; // Основной модуль;
-import {plugins} from './config/plugins'; // Импорт плагинов;
+const init = require('gulp'); // Основной модуль;
+const {plugins} = require('./config/plugins'); // Плагины по-умолчанию;
 
 // Передача значений в глобальную переменную;
 global.gulp = {
