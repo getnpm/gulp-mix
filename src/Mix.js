@@ -9,7 +9,7 @@ class Mix {
     }
 
     static js(source, output) {
-        gulp.src(source).pipe(gulp.dest(output));
+        return gulp.src(source).pipe(gulp.dest(output));
     }
 }
 
