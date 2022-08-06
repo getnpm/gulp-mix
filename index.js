@@ -1,7 +1,5 @@
 const Mix  = require('./src/Mix');
 
-let mix = Mix.primary;
-
-mix.boot();
+let mix = Mix.init;
 
 module.exports = mix;
