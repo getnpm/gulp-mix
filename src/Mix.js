@@ -1,12 +1,9 @@
 class Mix {
-    static _primary = null;
 
-    static get primary() {
-        return Mix._primary || (Mix._primary = new Mix());
-    }
+    static _init = null;
 
-    boot() {
-        return this;
+    static get init() {
+        return Mix._init || (Mix._init = new Mix());
     }
 }
 
