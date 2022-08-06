@@ -1,8 +1,9 @@
-import gulp from 'gulp'
-import {plugins} from './config/plugins'
+import init from 'gulp'; // Основной модуль;
+import {plugins} from './config/plugins'; // Импорт плагинов;
 
-global.app = {
-    gulp: gulp,
+// Передача значений в глобальную переменную;
+global.gulp = {
+    init: init,
     plugins: plugins,
 }
 
