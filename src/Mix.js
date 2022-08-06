@@ -1,14 +1,11 @@
-import gulp from 'gulp'
-import {plugins} from '../config/plugins'
-
 class Mix {
     static jsTranspile(source, output) {
-        gulp.src(source)
-            .pipe(gulp.dest(output))
-            .pipe(plugins.rename({suffix: '.min'}))
-            .pipe(plugins.sourcemaps.init())
-            .pipe(plugins.sourcemaps.write('./'))
-            .pipe(gulp.dest(output));
+        app.gulp.src(source)
+            .pipe(app.gulp.dest(output))
+            .pipe(app.plugins.rename({suffix: '.min'}))
+            .pipe(app.plugins.sourcemaps.init())
+            .pipe(app.plugins.sourcemaps.write('./'))
+            .pipe(app.gulp.dest(output));
     }
 }
 
