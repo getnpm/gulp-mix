@@ -1,12 +1,12 @@
-import init from 'gulp'
-
-const gulp = {
-    init: init
-};
-
 class Mix {
-    static jsTranspile(source, output) {
-        return gulp.init.src(source).pipe(gulp.init.dest(output));
+    static _primary = null;
+
+    static get primary() {
+        return Mix._primary || (Mix._primary = new Mix());
+    }
+
+    boot() {
+        return this;
     }
 }
 
